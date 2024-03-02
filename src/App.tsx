@@ -13,6 +13,8 @@ import Register from './components/login/Register';
 import ModalVote from './components/vote/ModalVote';
 import Partai from './pages/user/Partai';
 import Paslon from './pages/user/Paslon';
+import AddPartai from './components/add/AddPartai';
+import AddPaslon from './components/add/AddPaslon';
 
 const App: React.FC = () => {
   const navigate = useNavigate()
@@ -56,6 +58,10 @@ const App: React.FC = () => {
   }
 
   React.useEffect(() => {
+    navigate("/");
+  }, []);
+
+  React.useEffect(() => {
     navigate('/home')
   }, [isLogin])
   
@@ -68,12 +74,6 @@ const App: React.FC = () => {
       <Routes>
 
         <Route path='/' element={<Home/>}/>
-        <Route path='/paslon' element={<ListPaslon/>}/>
-        <Route path='/partai' element={<ListPartai/>}/>
-        <Route path='/list-partai' element={<Partai/>}/>
-        <Route path='/list-paslon' element={<Paslon/>}/>
-        <Route path='/voting' element={<Vote/>}/>
-        <Route path='/vote' element={<ModalVote/>}/>
         <Route path='/login' element={<Login handle={handleSetForm} login={login} />} />
         <Route path='/register' element={<Register />} />
         
@@ -90,6 +90,8 @@ const App: React.FC = () => {
           <Route path='/admin' element={<HomeAdmin/>} />
           <Route path='/paslon' element={<ListPaslon/>}/>
           <Route path='/partai' element={<ListPartai/>}/>
+          <Route path='/add-partai' element={<AddPartai/>}/>
+          <Route path='/add-paslon' element={<AddPaslon/>}/>
         </Route>
         
       </Routes>

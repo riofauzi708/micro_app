@@ -18,19 +18,19 @@ const Navbar: React.FC = () => {
       <div className='text-white mx-40 font-light'>
         <ul className='flex items-center'>
           <li className='mx-6'>
-            <Link to={'/list-partai'}>
+            <Link to={'/login'}>
              Partai
             </Link>
           </li>
             <span>|</span>
           <li className='mx-6'>
-            <Link to={'/list-paslon'}>
+            <Link to={'/login'}>
               Paslon
             </Link>
           </li>
             <span>|</span>
           <li className='mx-6'>
-            <Link to={'/voting'}>
+            <Link to={'/login'}>
               Voting
             </Link>
           </li>

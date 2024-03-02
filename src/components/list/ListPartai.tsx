@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Gambar from '../../assets/image 1.png'
 import Navboard from '../navbar/NavAdmin'
 
@@ -6,7 +7,8 @@ const ListPartai: React.FC = () => {
         <>
         <Navboard/>
         <h1 className='text-center font-extrabold text-4xl mt-14 mb-12' style={{ color: '#5E5400' }}>LIST PARTAI</h1>
-        <div className='flex justify-center text-sm pb-96'>
+        <div className='flex flex-col items-center justify-center'>
+        <div className='flex justify-center text-sm pb-10'>
             <table className='table-auto border-collapse border border-gray-300'>
                 <thead>
                     <tr className='bg-gray-200'>
@@ -37,6 +39,15 @@ const ListPartai: React.FC = () => {
                     </tr>
                 </tbody>
             </table>
+        </div>
+            <div>
+                <button className="w-20 text-white font-bold py-1.5 px-4 rounded-lg focus:outline-none focus:shadow-outline" 
+                style={{ backgroundColor: '#5E5400' }} type="button">
+                    <Link to='/add-partai'>
+                        ADD
+                    </Link>
+                </button>
+            </div>
         </div>
         </>
     )

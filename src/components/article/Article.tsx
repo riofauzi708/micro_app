@@ -1,6 +1,5 @@
 import Image1 from '../../assets/Kpu-Bg.png';
 import Image2 from '../../assets/Kpu-Box.png';
-import Image3 from '../../assets/headline.png';
 
 const Article = () => {
     return(
@@ -13,9 +12,6 @@ const Article = () => {
                     <p className='font-semibold text-white'>PEMILU PRESIDEN DUMBWAYS YANG JUJUR</p>
                     <p className='font-semibold text-white'>DIPILIH MELALUI SEBUAH ARTI NAMA</p>
                 </div>
-            </div>
-            <div className='mb-10'>
-                <img className='w-9/12 mx-auto mt-20' src={Image3} alt="" />
             </div>
         </div>
     );
