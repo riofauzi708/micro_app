@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import Gambar from '../../assets/image 1.png'
-import Navboard from '../navbar/NavAdmin'
+import NavAdmin from '../navbar/NavAdmin';
 
 const ListPartai: React.FC = () => {
     return(
         <>
-        <Navboard/>
+        <NavAdmin/>
         <h1 className='text-center font-extrabold text-4xl mt-14 mb-12' style={{ color: '#5E5400' }}>LIST PARTAI</h1>
         <div className='flex flex-col items-center justify-center'>
         <div className='flex justify-center text-sm pb-10'>

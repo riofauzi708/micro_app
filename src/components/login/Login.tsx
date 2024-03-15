@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 interface handleAuth {
@@ -6,7 +7,7 @@ interface handleAuth {
 }
 
 function Login (props: handleAuth) {
-  console.log(props)
+
     return(
       <div className='bg-gray-300 py-14'>
         <div className='container w-96 mx-auto my-20'>
@@ -22,6 +23,7 @@ function Login (props: handleAuth) {
       id="username" 
       type="text" 
       placeholder="Username"
+      autoComplete="username"
       onChange={props.handle}  />
     </div>
     <div className="mb-6">
@@ -33,6 +35,7 @@ function Login (props: handleAuth) {
       id="password" 
       type='password' 
       placeholder="******************" 
+      autoComplete="current-password"
       onChange={props.handle}/>
     </div>
     <div className="container flex-col items-center justify-center">

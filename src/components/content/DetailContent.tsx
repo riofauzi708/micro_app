@@ -2,6 +2,7 @@ import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
 import Gambar from '../../assets/Detail-Image.png';
 import Arrow from '../../assets/Arrow 1.png';
+import { Link } from "react-router-dom";
 
 const DetailContent: React.FC = () => {
     return(
@@ -11,7 +12,9 @@ const DetailContent: React.FC = () => {
         <div className="bg-white mx-40 flex-col items-center justify-center py-4">
             <div className="flex items-center justify-between pl-10">
                 <div className="flex items-center">
+                    <Link to={"/home"}>
                 <img className="w-4 h-3.5 mx-1.5" src= {Arrow} alt="" />
+                </Link>
                 <p className="text-xl font-semibold">Beranda</p>
                 </div>
                 <p className="text-xl mx-auto pr-32 font-semibold">BERITA HARI INI</p>
